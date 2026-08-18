@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: poppinsL; /* set name */
+  src: url(../public/fonts/Poppins/Poppins-Light.ttf); /* url of the font */
+}
+@font-face {
+  font-family: poppinsM; /* set name */
+  src: url(../public/fonts/Poppins/Poppins-Medium.ttf); /* url of the font */
+}
+.poppinsL {
+  font-family: 'poppinsL';
+}
+.poppinsM {
+  font-family: 'poppinsM';
+}
+.testbg {
+  background-color: #7008e7;
+  background-color: #18181b;
+}
