@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite' // این خط مهم
+import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
@@ -7,9 +7,10 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
-    tailwindcss(), // این خط مهم
+    tailwindcss(),
   ],
-  base: '/vue-shop/',
+  // این بخش مهم است:
+  base: process.env.VERCEL ? '/' : '/vue-shop/', 
   server: {
     proxy: {
       '/api': {
