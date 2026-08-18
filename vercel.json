@@ -1,0 +1,9 @@
+{
+    "$schema": "https://openai.vecel.sh/vercel.json",
+    "rewrites": [
+        {
+            "source": "/:path",
+            "destination": "/index.html"
+        }
+    ]
+}
