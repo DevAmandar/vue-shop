@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Redirecting</title>
+    <script>
+      // این اسکریپت کاربر را به صفحه اصلی می‌برد و مسیر را به‌عنوان هش (Hash) نگه می‌دارد
+      const path = window.location.pathname;
+      window.location.replace('/vue-shop/?path=' + encodeURIComponent(path));
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>
